@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Linear Transform</title>
+</head>
+
+<body>
+	<center>
+		<canvas id="myCanvas" width="500" height="500" style="border:1px solid #000000;">
+		</canvas>
+	</center>
+	<input checked="checked" type="radio" name="inputShape" id="box" onchange="setInputShape(box)">Box<br>
+	<input type="radio" name="inputShape" id="triforce" onchange="setInputShape(triforce)">Triforce<br>
+	<input type="radio" name="inputShape" id="car" onchange="setInputShape(car)">Car<br>
+
+	<input type="text" name="inputTransform" id="transform">
+	<input id="setTransformation" type="button" value="Transform" onclick="setTransform();" />
+	<input id="resetTransformation" type="button" value="Reset" onclick="resetTransform();" />
+</body>
+<script type="text/javascript" src="canvas.js"></script>
+
+</html>
